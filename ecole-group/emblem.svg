@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Ecole Group emblem — interlocking Z seal">
+  <g fill="none" stroke="#39452D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="120" cy="120" r="96"/>
+    <path d="M76 72 H164"/>
+    <path d="M164 72 L76 168"/>
+    <path d="M76 168 H164"/>
+    <path d="M84 84 H156"/>
+    <path d="M84 84 L156 156"/>
+    <path d="M84 156 H156"/>
+  </g>
+</svg>

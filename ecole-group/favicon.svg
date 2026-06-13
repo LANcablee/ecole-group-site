@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Ecole Group">
+  <rect x="0.5" y="0.5" width="63" height="63" rx="12" fill="#F5F1E8" stroke="#DCD5C5"/>
+  <g fill="none" stroke="#39452D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="32" r="25"/>
+    <path d="M20 19 H44"/>
+    <path d="M44 19 L20 45"/>
+    <path d="M20 45 H44"/>
+    <path d="M22.5 22 H41.5"/>
+    <path d="M22.5 22 L41.5 42"/>
+    <path d="M22.5 42 H41.5"/>
+  </g>
+</svg>
