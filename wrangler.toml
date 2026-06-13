@@ -1,0 +1,5 @@
+name = "ecole-group-site"
+compatibility_date = "2025-09-01"
+
+[assets]
+directory = "./ecole-group"
