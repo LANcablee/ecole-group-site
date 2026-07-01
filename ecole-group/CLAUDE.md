@@ -10,10 +10,15 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - `textile.html`, `chemicals.html` — "in development" pages
 - `privacy.html`, `cookie.html`, `terms.html` — legal (STARTER templates: review + fill placeholders)
 
-## Design tokens (CSS :root, currently duplicated in each file)
-- cream `#F5F1E8`, ink `#16130F`, body text `#433F38`, muted `#6E6A60`, hairline `#DCD5C5`
+## Design tokens (CSS :root — tek dosya: `styles.css`)
+- cream `#F5F1E8`, ink `#16130F`, body text `#433F38`, muted `#6B675D` (AA icin koyulastirildi), hairline `#DCD5C5`
 - green accent `#39452D`, green-dark `#2A3320`
 - Fonts (Google Fonts): Cormorant Garamond (display/serif), Jost (sans)
+
+## Structure
+- Shared CSS: `styles.css` (tum sayfalar `<link>` ile kullanir; olu kurallar temizlendi)
+- Shared JS: `site.js` (`defer`; menu + focus trap + inert + scroll reveal). `<head>`'te tek satirlik inline script `.js` sinifini ekler — CSP hash'i `_headers` icinde.
+- `_headers`: guvenlik basliklari (CSP, nosniff, frame-ancestors, Referrer/Permissions-Policy) + styles/site.js cache. Repo kokunde durmali.
 
 ## Conventions
 - Centered wordmark header; full-screen menu (hamburger morphs to ×)
@@ -31,7 +36,6 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - **Favicon:** `favicon.svg` (bold version of the mark — green tile, cream strokes) is linked in every page `<head>` via `<link rel="icon" type="image/svg+xml">`. Possible future use: letterhead, PNG/ICO fallback for older browsers.
 
 ## TODO
-- Extract the shared CSS into a single `styles.css` (it is duplicated inline in every page)
 - Fill legal placeholders (registered office address, company number) and have the legal text reviewed
 - Optional: dedicated `for-retailers.html` / `contact.html` (currently sections on Home)
 - Deploy: GitHub repo → Cloudflare Pages; connect domain ecolegroup.co.uk
