@@ -312,30 +312,36 @@
     flex:none;transform:translateY(-1px) rotate(45deg);transition:transform .4s ease}
   .lang-btn[aria-expanded="true"] .lang-caret{transform:translateY(2px) rotate(-135deg)}
 
-  .lang-menu{position:absolute;right:-.4rem;top:calc(100% + .95rem);min-width:10.5rem;
-    background:var(--cream);border:1px solid var(--line);border-radius:2px;
-    padding:.6rem 0;z-index:70;
-    box-shadow:0 18px 38px -22px rgba(22,19,15,.28);
-    opacity:0;visibility:hidden;transform:translateY(-7px);pointer-events:none;
-    transition:opacity .4s ease, transform .4s ease, visibility .4s ease}
+  /* cercevesiz, tuylu kenarli buzlu ortu — kutu yok */
+  .lang-menu{position:absolute;right:-1.6rem;top:calc(100% + .2rem);min-width:13rem;
+    padding:2.1rem 1.9rem 2.3rem 3rem;z-index:70;
+    border:0;border-radius:0;box-shadow:none;
+    background:rgba(245,241,232,.9);
+    -webkit-backdrop-filter:blur(14px) saturate(1.1);
+    backdrop-filter:blur(14px) saturate(1.1);
+    -webkit-mask-image:radial-gradient(130% 115% at 72% 42%, #000 60%, transparent 100%);
+    mask-image:radial-gradient(130% 115% at 72% 42%, #000 60%, transparent 100%);
+    opacity:0;visibility:hidden;transform:translateY(-8px);pointer-events:none;
+    transition:opacity .45s ease, transform .45s ease, visibility .45s ease}
   .lang-menu.open{opacity:1;visibility:visible;transform:none;pointer-events:auto}
 
-  .lang-menu a{display:flex;align-items:center;gap:.7rem;padding:.52rem 1.2rem;
-    font-family:var(--sans);font-weight:500;font-size:.67rem;letter-spacing:.2em;
+  .lang-menu a{display:flex;align-items:center;justify-content:flex-end;gap:.7rem;
+    padding:.6rem .3rem;
+    font-family:var(--sans);font-weight:500;font-size:.7rem;letter-spacing:.2em;
     text-transform:uppercase;color:var(--muted);
     opacity:0;transition:opacity .4s ease, color .25s ease, transform .25s ease}
-  .lang-menu a::before{content:"";width:1px;height:1.05em;background:var(--green);
+  .lang-menu a::after{content:"";width:1px;height:1.05em;background:var(--green);
     opacity:0;flex:none;transition:opacity .25s ease}
   .lang-menu.open a{opacity:1}
   .lang-menu.open a:nth-child(1){transition-delay:.05s}
   .lang-menu.open a:nth-child(2){transition-delay:.09s}
   .lang-menu.open a:nth-child(3){transition-delay:.13s}
   .lang-menu.open a:nth-child(4){transition-delay:.17s}
-  .lang-menu.open a:hover,.lang-menu.open a:focus-visible{color:var(--ink);transform:translateX(3px);transition-delay:0s}
+  .lang-menu.open a:hover,.lang-menu.open a:focus-visible{color:var(--ink);transform:translateX(-3px);transition-delay:0s}
   .lang-menu a[aria-current="true"]{color:var(--green)}
-  .lang-menu a[aria-current="true"]::before{opacity:1}
+  .lang-menu a[aria-current="true"]::after{opacity:1}
 
   @media (prefers-reduced-motion:reduce){
-    .lang-caret,.lang-menu,.lang-menu a,.lang-menu a::before,.lang .header-lang{transition:none}
+    .lang-caret,.lang-menu,.lang-menu a,.lang-menu a::after,.lang .header-lang{transition:none}
     .lang-menu a{opacity:1}
   }
