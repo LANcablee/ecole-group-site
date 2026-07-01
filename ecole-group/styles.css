@@ -303,3 +303,17 @@
   .legal-body a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
   .legal-body a:hover{color:var(--green-d)}
   .legal-body strong{font-weight:500;color:var(--ink)}
+
+  /* ---- language switcher ---- */
+  .lang{grid-column:3;justify-self:end;position:relative}
+  .lang .header-lang{grid-column:auto;display:inline-flex;align-items:center;gap:.5rem}
+  .lang-caret{width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;
+    transform:rotate(45deg) translate(-1px,-1px);transition:transform .25s ease}
+  .lang-btn[aria-expanded="true"] .lang-caret{transform:rotate(225deg) translate(-2px,0)}
+  .lang-menu{position:absolute;right:0;top:calc(100% + .55rem);min-width:9.5rem;
+    background:var(--cream);border:1px solid var(--line);border-radius:2px;padding:.35rem 0;z-index:70}
+  .lang-menu a{display:block;padding:.55rem 1.1rem;font-family:var(--sans);font-weight:400;
+    font-size:.88rem;letter-spacing:.06em;color:var(--body)}
+  .lang-menu a:hover,.lang-menu a:focus-visible{background:var(--cream-2);color:var(--ink)}
+  .lang-menu a[aria-current="true"]{color:var(--green)}
+  @media (prefers-reduced-motion:reduce){.lang-caret{transition:none}}

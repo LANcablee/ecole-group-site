@@ -6,6 +6,8 @@
   var pageMain = document.querySelector('main');
   var pageFooter = document.querySelector('.site-footer');
   var lastFocus = null;
+  var openLabel = menuBtn.getAttribute('data-open-label') || 'Open menu';
+  var closeLabel = menuBtn.getAttribute('data-close-label') || 'Close menu';
 
   function setInert(on){
     if (pageMain) pageMain.inert = on;
@@ -17,7 +19,7 @@
     header.classList.add('menu-open');
     menuPanel.classList.add('open');
     menuBtn.setAttribute('aria-expanded','true');
-    menuBtn.setAttribute('aria-label','Close menu');
+    menuBtn.setAttribute('aria-label', closeLabel);
     document.body.style.overflow = 'hidden';
     setInert(true);
     var first = menuPanel.querySelector('a');
@@ -28,7 +30,7 @@
     header.classList.remove('menu-open');
     menuPanel.classList.remove('open');
     menuBtn.setAttribute('aria-expanded','false');
-    menuBtn.setAttribute('aria-label','Open menu');
+    menuBtn.setAttribute('aria-label', openLabel);
     document.body.style.overflow = '';
     setInert(false);
     if (restoreFocus !== false && lastFocus) lastFocus.focus();
@@ -71,5 +73,24 @@
       });
     }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
     els.forEach(function(el){ io.observe(el); });
+  }
+
+  // Language switcher (header dropdown)
+  var langBtn = document.getElementById('langBtn');
+  var langMenu = document.getElementById('langMenu');
+  function closeLang(){ langMenu.setAttribute('hidden',''); langBtn.setAttribute('aria-expanded','false'); }
+  if (langBtn && langMenu){
+    langBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      if (langMenu.hasAttribute('hidden')){ langMenu.removeAttribute('hidden'); langBtn.setAttribute('aria-expanded','true'); }
+      else { closeLang(); }
+    });
+    document.addEventListener('click', function(e){
+      var t = e.target;
+      if (!langMenu.hasAttribute('hidden') && !(t && t.closest && t.closest('.lang'))) closeLang();
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && !langMenu.hasAttribute('hidden')){ closeLang(); langBtn.focus(); }
+    });
   }
 })();

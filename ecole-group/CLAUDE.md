@@ -3,6 +3,13 @@
 Static multi-page site for **Ecole Group Ltd**, an independent UK distribution company.
 Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecole Textile** and **Ecole Chemicals** divisions are in development.
 
+## i18n
+- Kok dizin = EN (varsayilan), `/tr/`, `/fr/`, `/de/` = birebir kopyalar (8 sayfa x 3 dil).
+- Her sayfada canonical + `hreflang` (en / tr / fr / de / x-default) uclusu var; sitemap.xml `xhtml:link` alternatifleriyle iki dili de listeler.
+- Header sag ustte dil acilir menusu (`.lang` / `#langBtn` / `#langMenu`, mantik site.js icinde). Her sayfa kendi karsiligina linkler.
+- TR/FR/DE yasal sayfalarda "baglayici surum Ingilizcedir" notu var. Icerik degisikliklerinde DORT dili birden guncelle (EN, TR, FR, DE).
+- TR/FR/DE sayfalar asset'lere kok-goreli baglanir (`/styles.css`, `/site.js`, `/favicon.svg`).
+
 ## Pages
 - `index.html` — Home (hero, brands, "for retailers" section, contact section)
 - `about.html` — About

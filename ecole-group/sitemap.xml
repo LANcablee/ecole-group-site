@@ -1,11 +1,291 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ecolegroup.co.uk/</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ecolegroup.co.uk/about.html</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ecolegroup.co.uk/elys-cure.html</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ecolegroup.co.uk/textile.html</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://ecolegroup.co.uk/chemicals.html</loc><lastmod>2026-06-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://ecolegroup.co.uk/privacy.html</loc><lastmod>2026-06-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://ecolegroup.co.uk/cookie.html</loc><lastmod>2026-06-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://ecolegroup.co.uk/terms.html</loc><lastmod>2026-06-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ecolegroup.co.uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/about.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/about.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/about.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/about.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/about.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/elys-cure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/elys-cure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/elys-cure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/elys-cure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/elys-cure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/elys-cure.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/textile.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/textile.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/textile.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/textile.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/textile.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/textile.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/textile.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/textile.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/textile.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/chemicals.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/chemicals.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/chemicals.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/chemicals.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/chemicals.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/chemicals.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/privacy.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/privacy.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/privacy.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/privacy.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/cookie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/cookie.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/cookie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/cookie.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/cookie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/cookie.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/cookie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/cookie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/cookie.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/terms.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/tr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/terms.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/fr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/terms.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ecolegroup.co.uk/de/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecolegroup.co.uk/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://ecolegroup.co.uk/tr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ecolegroup.co.uk/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecolegroup.co.uk/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecolegroup.co.uk/terms.html"/>
+    <lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority>
+  </url>
 </urlset>
