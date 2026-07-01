@@ -78,19 +78,20 @@
   // Language switcher (header dropdown)
   var langBtn = document.getElementById('langBtn');
   var langMenu = document.getElementById('langMenu');
-  function closeLang(){ langMenu.setAttribute('hidden',''); langBtn.setAttribute('aria-expanded','false'); }
   if (langBtn && langMenu){
+    langMenu.removeAttribute('hidden'); // görünürlüğü CSS geçişleri yönetir
+    function openLang(){ langMenu.classList.add('open'); langBtn.setAttribute('aria-expanded','true'); }
+    function closeLang(){ langMenu.classList.remove('open'); langBtn.setAttribute('aria-expanded','false'); }
     langBtn.addEventListener('click', function(e){
       e.stopPropagation();
-      if (langMenu.hasAttribute('hidden')){ langMenu.removeAttribute('hidden'); langBtn.setAttribute('aria-expanded','true'); }
-      else { closeLang(); }
+      langMenu.classList.contains('open') ? closeLang() : openLang();
     });
     document.addEventListener('click', function(e){
       var t = e.target;
-      if (!langMenu.hasAttribute('hidden') && !(t && t.closest && t.closest('.lang'))) closeLang();
+      if (langMenu.classList.contains('open') && !(t && t.closest && t.closest('.lang'))) closeLang();
     });
     document.addEventListener('keydown', function(e){
-      if (e.key === 'Escape' && !langMenu.hasAttribute('hidden')){ closeLang(); langBtn.focus(); }
+      if (e.key === 'Escape' && langMenu.classList.contains('open')){ closeLang(); langBtn.focus(); }
     });
   }
 })();
