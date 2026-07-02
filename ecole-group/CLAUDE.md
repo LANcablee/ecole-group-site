@@ -43,6 +43,6 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - **Favicon:** `favicon.svg` (bold version of the mark — green tile, cream strokes) is linked in every page `<head>` via `<link rel="icon" type="image/svg+xml">`. Possible future use: letterhead, PNG/ICO fallback for older browsers.
 
 ## TODO
-- Fill legal placeholders (registered office address, company number) and have the legal text reviewed
+- Sirket numarasi + kayitli ofis adresi belli olunca DORT dildeki privacy.html "Who we are / Biz kimiz" cumlesine ekle (su an gecici notr cumle var; UK Companies Act s82 geregi canli sitede zorunlu) ve yasal metni gozden gecirt
 - Optional: dedicated `for-retailers.html` / `contact.html` (currently sections on Home)
 - Deploy: GitHub repo → Cloudflare Pages; connect domain ecolegroup.co.uk
