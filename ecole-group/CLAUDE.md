@@ -20,12 +20,12 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 ## Design tokens (CSS :root — tek dosya: `styles.css`)
 - cream `#F5F1E8`, ink `#16130F`, body text `#433F38`, muted `#6B675D` (AA icin koyulastirildi), hairline `#DCD5C5`
 - green accent `#39452D`, green-dark `#2A3320`
-- Fonts (Google Fonts): Cormorant Garamond (display/serif), Jost (sans)
+- Fonts (self-hosted, `/fonts/` klasorunde variable woff2; `@font-face` kurallari `styles.css` basinda): Cormorant Garamond (display/serif), Jost (sans). Google Fonts KULLANILMIYOR — ucuncu tarafa istek gitmez (GDPR).
 
 ## Structure
 - Shared CSS: `styles.css` (tum sayfalar `<link>` ile kullanir; olu kurallar temizlendi)
-- Shared JS: `site.js` (`defer`; menu + focus trap + inert + scroll reveal). `<head>`'te tek satirlik inline script `.js` sinifini ekler — CSP hash'i `_headers` icinde.
-- `_headers`: guvenlik basliklari (CSP, nosniff, frame-ancestors, Referrer/Permissions-Policy) + styles/site.js cache. Repo kokunde durmali.
+- Shared JS: `site.js` (`defer`; menu + focus trap + inert + scroll reveal). `.js` sinifi site.js'in ILK satirinda eklenir (head'de inline script YOK, CSP hash gerekmez). Ozellik bloklari bagimsiz `if` korumalidir — biri eksik/hatali olsa digerleri calisir; script hic yuklenmezse site gorunur kalir.
+- `_headers`: guvenlik basliklari (CSP — tum kaynaklar `'self'`, HSTS, nosniff, frame-ancestors, Referrer/Permissions-Policy) + styles/site.js/fonts cache. `ecole-group/` klasoru kokunde durmali.
 
 ## Conventions
 - Centered wordmark header; full-screen menu (hamburger morphs to ×)
