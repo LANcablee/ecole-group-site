@@ -20,12 +20,16 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 ## Design tokens (CSS :root — tek dosya: `styles.css`)
 - cream `#F5F1E8`, ink `#16130F`, body text `#433F38`, muted `#6B675D` (AA icin koyulastirildi), hairline `#DCD5C5`
 - green accent `#39452D`, green-dark `#2A3320`
-- Fonts (self-hosted, `/fonts/` klasorunde variable woff2; `@font-face` kurallari `styles.css` basinda): Cormorant Garamond (display/serif), Jost (sans). Google Fonts KULLANILMIYOR — ucuncu tarafa istek gitmez (GDPR).
+- Fonts (Google Fonts): Cormorant Garamond (display/serif), Jost (sans)
+
+## URL kurali
+- TUM ic linkler, canonical, hreflang ve sitemap UZANTISIZ URL kullanir: `/about`, `/tr/about`, ana sayfalar `/`, `/tr/` ...
+- Cloudflare `.html` isteklerini uzantisiza 308 ile yonlendirir; eski `.html` linkler kirilmaz.
 
 ## Structure
 - Shared CSS: `styles.css` (tum sayfalar `<link>` ile kullanir; olu kurallar temizlendi)
-- Shared JS: `site.js` (`defer`; menu + focus trap + inert + scroll reveal). `.js` sinifi site.js'in ILK satirinda eklenir (head'de inline script YOK, CSP hash gerekmez). Ozellik bloklari bagimsiz `if` korumalidir — biri eksik/hatali olsa digerleri calisir; script hic yuklenmezse site gorunur kalir.
-- `_headers`: guvenlik basliklari (CSP — tum kaynaklar `'self'`, HSTS, nosniff, frame-ancestors, Referrer/Permissions-Policy) + styles/site.js/fonts cache. `ecole-group/` klasoru kokunde durmali.
+- Shared JS: `site.js` (`defer`; menu + focus trap + inert + scroll reveal). `<head>`'te tek satirlik inline script `.js` sinifini ekler — CSP hash'i `_headers` icinde.
+- `_headers`: guvenlik basliklari (CSP, nosniff, frame-ancestors, Referrer/Permissions-Policy) + styles/site.js cache. Repo kokunde durmali.
 
 ## Conventions
 - Centered wordmark header; full-screen menu (hamburger morphs to ×)
@@ -43,6 +47,6 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - **Favicon:** `favicon.svg` (bold version of the mark — green tile, cream strokes) is linked in every page `<head>` via `<link rel="icon" type="image/svg+xml">`. Possible future use: letterhead, PNG/ICO fallback for older browsers.
 
 ## TODO
-- Sirket numarasi + kayitli ofis adresi belli olunca DORT dildeki privacy.html "Who we are / Biz kimiz" cumlesine ekle (su an gecici notr cumle var; UK Companies Act s82 geregi canli sitede zorunlu) ve yasal metni gozden gecirt
+- Fill legal placeholders (registered office address, company number) and have the legal text reviewed
 - Optional: dedicated `for-retailers.html` / `contact.html` (currently sections on Home)
 - Deploy: GitHub repo → Cloudflare Pages; connect domain ecolegroup.co.uk
