@@ -72,11 +72,16 @@
   .site-header.scrolled{border-bottom-color:var(--line)}
   .header-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:78px}
 
-  .wordmark{display:inline-flex;align-items:center;gap:.7rem;line-height:1}
-  .wordmark .w-serif{font-family:var(--serif);font-weight:500;font-size:2rem;color:var(--ink);letter-spacing:.01em}
-  .wordmark .w-rule{width:1px;height:2.1rem;background:var(--ink);opacity:.55}
-  .wordmark .w-group{font-family:var(--sans);font-weight:400;font-size:.96rem;
-    letter-spacing:.3em;text-transform:uppercase;color:var(--ink)}
+  .wordmark{display:inline-flex;align-items:center;line-height:1;color:var(--ink)}
+  .w-mark{display:block;height:clamp(2.45rem,6.4vw,3.05rem);aspect-ratio:622/183}
+  @supports ((-webkit-mask-image:url(#a)) or (mask-image:url(#a))){
+    .w-mark{background-color:currentColor;
+      -webkit-mask:url(/wordmark.svg) no-repeat center/contain;
+              mask:url(/wordmark.svg) no-repeat center/contain}
+  }
+  @supports not ((-webkit-mask-image:url(#a)) or (mask-image:url(#a))){
+    .w-mark{background:url(/wordmark.svg) no-repeat center/contain}
+  }
   .header-inner .wordmark{grid-column:2;justify-self:center}
 
   .menu-btn{grid-column:1;justify-self:start;background:none;border:0;cursor:pointer;
@@ -205,9 +210,7 @@
   .site-footer{background:var(--green);color:var(--cream)}
   .footer-inner{padding-block:clamp(3rem,6vw,4.5rem);
     display:flex;flex-wrap:wrap;gap:2rem 3rem;align-items:flex-start;justify-content:space-between}
-  .site-footer .wordmark .w-serif{color:var(--cream)}
-  .site-footer .wordmark .w-rule{background:var(--cream);opacity:.5}
-  .site-footer .wordmark .w-group{color:var(--cream)}
+  .site-footer .wordmark{color:var(--cream)}
   .footer-mail{margin-top:1rem;color:#D9D7CB;font-size:1.02rem}
   .footer-mail a:hover{color:var(--cream)}
   .footer-links{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;font-size:.86rem;letter-spacing:.05em}

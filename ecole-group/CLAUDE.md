@@ -38,12 +38,18 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - Tracked-caps eyebrows with a small green vertical "tick" (logo motif)
 - Active brand uses green; in-development items stay neutral
 
+## Wordmark
+- `wordmark.svg` (viewBox 622x183) = resmi logo: serif "Ecole" + ince dikey cizgi + tracked "GROUP".
+- Header ve footer'da `<span class="w-mark">` olarak, CSS `mask-image` ile basilir; renk `currentColor`
+  (header: ink, footer: cream). Boylece tek dosya iki zeminde de dogru renkte cikar ve keskin kalir.
+- Boyut `.w-mark` icindeki `height` + `aspect-ratio` ile ayarlanir.
+
 ## Emblem watermark
-- A spiritual mark of two interlocking "Z" letterforms (nested, crossing at centre, in a thin circle), thin uniform stroke `1.5`, green `#39452D`.
+- A mark of two interlocking "Z" letterforms (nested, crossing at centre, in a thin circle). Ic Z'nin yatay cubuklari dis Z'nin caprazina TAM DEGER (84->153 ust, 87->156 alt) — "original, inner bars meeting the diagonal" varyanti, thin uniform stroke `2`, green `#39452D`.
 - Standalone file: `emblem.svg`. Also embedded **inline** as `<svg class="seal-bg">` (uses `currentColor`) so pages stay self-contained.
 - Placed as a faint background watermark via `.seal-bg` (absolutely centred, low `opacity`): behind the **contact** section on `index.html` (opacity .07) and behind the centred content on `textile.html` / `chemicals.html` (opacity .06).
 - A repeating "chain" of the same seal (`.hero-chain` / `.soon-chain` — inline `<svg>` with a `<defs>` unit + `<use>`) runs faintly along the lower area: lower-right on `index.html` (fades left), centred on `textile.html` / `chemicals.html` (fades both ends); opacity .08, hidden under 820px.
-- To tune: change `opacity` (visibility) and `width` / `height` (size). Alternate seal layout available: `bg-z-B-stacked.svg`.
+- To tune: change `opacity` (visibility) and `width` / `height` (size). Alternate seal layout available: `emblem-alt.svg` (farkli, ust uste binen duzen — sayfalarda KULLANILMIYOR, eski konsept).
 - **Favicon:** `favicon.svg` (bold version of the mark — green tile, cream strokes) is linked in every page `<head>` via `<link rel="icon" type="image/svg+xml">`. Possible future use: letterhead, PNG/ICO fallback for older browsers.
 
 ## TODO
