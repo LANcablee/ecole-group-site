@@ -1,7 +1,9 @@
 # Ecole Group — website
 
-Static multi-page site for **Ecole Group Ltd**, an independent UK distribution company.
-Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecole Textile** and **Ecole Chemicals** divisions are in development.
+Static multi-page site for **Ecole Group Ltd**, an independent UK group.
+
+**Marka mimarisi:** **SARDIS HOME** = grubun KENDI markasi (pamuklu ev/banyo tekstili; Turkiye'de uretilir) — eski "Ecole Textile" bolumunun yerine gecti. **ELY’S CURE** = distributorlugunu yaptigimiz marka. **Ecole Chemicals** = gelistirme asamasindaki tek bolum.
+Site kendini distributor DEGIL, hem kendi markalarini kuran hem secili markalari temsil eden bir grup olarak konumlar; toptanci dili (marj, minimum siparis, stok yenileme, ticari kosullar) KULLANILMAZ.
 
 ## i18n
 - Kok dizin = EN (varsayilan), `/tr/`, `/fr/`, `/de/` = birebir kopyalar (8 sayfa x 3 dil).
@@ -14,7 +16,9 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - `index.html` — Home (hero, brands, "for retailers" section, contact section)
 - `about.html` — About
 - `elys-cure.html` — ELY’S CURE brand page
-- `textile.html`, `chemicals.html` — "in development" pages
+- `sardis-home.html` — SARDIS HOME marka sayfasi (`.theme-sardis` alt temasi)
+- `chemicals.html` — "in development" sayfasi
+- `textile.html` KALDIRILDI — `_redirects` ile `/textile` → `/sardis-home` (301)
 - `privacy.html`, `cookie.html`, `terms.html` — legal (STARTER templates: review + fill placeholders)
 
 ## Design tokens (CSS :root — tek dosya: `styles.css`)
@@ -47,8 +51,8 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 ## Emblem watermark
 - A mark of two interlocking "Z" letterforms (nested, crossing at centre, in a thin circle). Ic Z'nin yatay cubuklari dis Z'nin caprazina TAM DEGER (84->153 ust, 87->156 alt) — "original, inner bars meeting the diagonal" varyanti, thin uniform stroke `2`, green `#39452D`.
 - Standalone file: `emblem.svg`. Also embedded **inline** as `<svg class="seal-bg">` (uses `currentColor`) so pages stay self-contained.
-- Placed as a faint background watermark via `.seal-bg` (absolutely centred, low `opacity`): behind the **contact** section on `index.html` (opacity .07) and behind the centred content on `textile.html` / `chemicals.html` (opacity .06).
-- A repeating "chain" of the same seal (`.hero-chain` / `.soon-chain` — inline `<svg>` with a `<defs>` unit + `<use>`) runs faintly along the lower area: lower-right on `index.html` (fades left), centred on `textile.html` / `chemicals.html` (fades both ends); opacity .08, hidden under 820px.
+- Placed as a faint background watermark via `.seal-bg` (absolutely centred, low `opacity`): behind the **contact** section on `index.html` (opacity .07) and behind the centred content on `chemicals.html` (opacity .06).
+- A repeating "chain" of the same seal (`.hero-chain` / `.soon-chain` — inline `<svg>` with a `<defs>` unit + `<use>`) runs faintly along the lower area: lower-right on `index.html` (fades left), centred on `chemicals.html` (fades both ends); opacity .08, hidden under 820px.
 - To tune: change `opacity` (visibility) and `width` / `height` (size). Alternate seal layout available: `emblem-alt.svg` (farkli, ust uste binen duzen — sayfalarda KULLANILMIYOR, eski konsept).
 - **Favicon:** `favicon.svg` (bold version of the mark — green tile, cream strokes) is linked in every page `<head>` via `<link rel="icon" type="image/svg+xml">`. Possible future use: letterhead, PNG/ICO fallback for older browsers.
 
@@ -56,3 +60,19 @@ Active brand: **ELY’S CURE** (natural skincare, distributed in the UK). **Ecol
 - Fill legal placeholders (registered office address, company number) and have the legal text reviewed
 - Optional: dedicated `for-retailers.html` / `contact.html` (currently sections on Home)
 - Deploy: GitHub repo → Cloudflare Pages; connect domain ecolegroup.co.uk
+
+## SARDIS HOME alt tema
+- Tokenlar `.theme-sardis` icine KAPSANMISTIR; global `:root`'a sizmaz.
+  cream `#EDE6D9`, ink `#2E2E2B`, aksan clay `#6E3F33`, clay-d `#58322A`, line `#DCD2C0`, muted `#696258`.
+  Zemin ve murekkep urun etiketinden (SARDIS-HOME-LONDON.pdf) dogrulanmistir.
+- Wordmark AYRI DOSYA DEGIL: `.sardis-mark` + `.sardis-sub` ile Jost'tan harf araligiyla dizilir (etiketteki geometrik dizilisin ayni).
+- `.origin-bar` = `.vegan-bar` muadili, kiremit zeminli, etiketteki bakim + mense bilgisi.
+
+## Marka/hukuk kurallari (Sardis Home)
+- SARDIS HOME yaninda ASLA `®` / `™` kullanma (tescil sureci devam ediyor).
+- "Ecole Group" ibaresi Sardis wordmark'inin icine veya urun gorseline KONMAZ; yalnizca govde metni ve kurumsal katmanda gecer.
+- YASAK: marka geneline yayilan "%100 pamuk" iddiasi; uydurma kurulus yili/miras; "dunyanin havlu baskenti" vb.
+- Denizli ADI GECMEZ. Izin verilen tek register: urunun "koklu bir tekstil bolgesinde uretildigi". Miras sahiplenilmez.
+- Ecole Group'un URETIM yaptigina dair iddia YOK. Mense yalnizca urune baglanir ("Made in Turkiye").
+  FR'de `fabrication`, DE'de `Herstellung` gruba baglanacak sekilde KULLANILMAZ.
+- Toptanci dili yasak: marj, minimum siparis, stok yenileme, ticari kosullar/hesaplar, "rafa hazir".
