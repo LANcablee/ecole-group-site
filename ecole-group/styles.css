@@ -178,7 +178,10 @@
   .ed-item .arrowlink{font-size:.7rem;letter-spacing:.17em;text-transform:uppercase}
 
   /* ---- brands chain (hero-chain'in aynalanmisi: sol alt, saga dogru solar) ---- */
-  .brands{position:relative;overflow:hidden}
+  /* zincire kendi payini ver: normal alt bosluk + zincir yuksekligi.
+     Boylece zincir kartlara degmez ve hero'daki ferahligi tekrarlar. */
+  .brands{position:relative;overflow:hidden;
+    padding-bottom:calc(clamp(4.75rem,10vw,8.5rem) + clamp(90px,12vw,150px))}
   .brands > .wrap{position:relative;z-index:1}
   .brands-chain{position:absolute;left:0;bottom:0;height:clamp(90px,12vw,150px);width:auto;
     color:var(--green);opacity:.11;pointer-events:none;z-index:0;
