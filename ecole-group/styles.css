@@ -163,7 +163,7 @@
     max-width:33rem;margin:clamp(2.75rem,6vw,4.5rem) auto clamp(2.5rem,5vw,3.5rem);
   }
   .ed-rule::before,.ed-rule::after{content:"";flex:1;height:1px;background:var(--line)}
-  .ed-seal{width:clamp(56px,6vw,72px);height:auto;flex:none;color:var(--green);opacity:.9}
+  .ed-seal{width:clamp(28px,3vw,34px);height:auto;flex:none;color:var(--green);opacity:.9}
   .ed-head{margin-bottom:clamp(2.4rem,5vw,3.6rem)}
   .ed-head .eyebrow{justify-content:center;margin-bottom:1.15rem}
   .ed-head h2{font-size:clamp(1.85rem,3.9vw,2.85rem);line-height:1.13;max-width:22ch;margin-inline:auto}
@@ -176,6 +176,14 @@
     font-size:clamp(1.3rem,2.1vw,1.62rem);line-height:1.22;margin-bottom:.8rem}
   .ed-item p{color:var(--muted);font-size:1rem;line-height:1.7;margin-bottom:1.5rem;flex:1}
   .ed-item .arrowlink{font-size:.7rem;letter-spacing:.17em;text-transform:uppercase}
+
+  /* ---- brands chain (hero-chain'in aynalanmisi: sol alt, saga dogru solar) ---- */
+  .brands{position:relative;overflow:hidden}
+  .brands > .wrap{position:relative;z-index:1}
+  .brands-chain{position:absolute;left:0;bottom:0;height:clamp(90px,12vw,150px);width:auto;
+    color:var(--green);opacity:.11;pointer-events:none;z-index:0;
+    -webkit-mask-image:linear-gradient(to left,transparent 0%,transparent 42%,#000 82%,#000 96%,transparent 100%);
+    mask-image:linear-gradient(to left,transparent 0%,transparent 42%,#000 82%,#000 96%,transparent 100%)}
 
   /* ---- brands ---- */
   .section-head{margin-bottom:clamp(2.5rem,5vw,4rem)}
