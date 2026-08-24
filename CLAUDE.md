@@ -53,6 +53,9 @@ Site kendini distributor DEGIL, hem kendi markalarini kuran hem secili markalari
 - Standalone file: `emblem.svg`. Also embedded **inline** as `<svg class="seal-bg">` (uses `currentColor`) so pages stay self-contained.
 - Placed as a faint background watermark via `.seal-bg` (absolutely centred, low `opacity`): behind the **contact** section on `index.html` (opacity .07) and behind the centred content on `chemicals.html` (opacity .06).
 - A repeating "chain" of the same seal (`.hero-chain` / `.soon-chain` — inline `<svg>` with a `<defs>` unit + `<use>`) runs faintly along the lower area: lower-right on `index.html` (fades left), centred on `chemicals.html` (fades both ends); opacity .08, hidden under 820px.
+- Anasayfadaki editorial ayracin ortasindaki `.ed-seal` ORIJINAL amblemin BIREBIR ayni geometrisidir
+  (cember 120,120 r96 + dis Z 76/164/72/168 + ic Z 84->153 ust, 87->156 alt). Kucuk boyutta okunsun diye
+  yalnizca `stroke-width` 2 yerine 4; koordinatlar ASLA sadelestirilmez.
 - To tune: change `opacity` (visibility) and `width` / `height` (size). Alternate seal layout available: `emblem-alt.svg` (farkli, ust uste binen duzen — sayfalarda KULLANILMIYOR, eski konsept).
 - **Favicon:** `favicon.svg` (bold version of the mark — green tile, cream strokes) is linked in every page `<head>` via `<link rel="icon" type="image/svg+xml">`. Possible future use: letterhead, PNG/ICO fallback for older browsers.
 

@@ -163,7 +163,7 @@
     max-width:33rem;margin:clamp(2.75rem,6vw,4.5rem) auto clamp(2.5rem,5vw,3.5rem);
   }
   .ed-rule::before,.ed-rule::after{content:"";flex:1;height:1px;background:var(--line)}
-  .ed-seal{width:20px;height:20px;flex:none;color:var(--green);opacity:.85}
+  .ed-seal{width:clamp(56px,6vw,72px);height:auto;flex:none;color:var(--green);opacity:.9}
   .ed-head{margin-bottom:clamp(2.4rem,5vw,3.6rem)}
   .ed-head .eyebrow{justify-content:center;margin-bottom:1.15rem}
   .ed-head h2{font-size:clamp(1.85rem,3.9vw,2.85rem);line-height:1.13;max-width:22ch;margin-inline:auto}
