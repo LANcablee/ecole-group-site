@@ -11,6 +11,8 @@ Site kendini distributor DEGIL, hem kendi markalarini kuran hem secili markalari
 - Header sag ustte dil acilir menusu (`.lang` / `#langBtn` / `#langMenu`, mantik site.js icinde). Her sayfa kendi karsiligina linkler.
 - TR/FR/DE yasal sayfalarda "baglayici surum Ingilizcedir" notu var. Icerik degisikliklerinde DORT dili birden guncelle (EN, TR, FR, DE).
 - TR/FR/DE sayfalar asset'lere kok-goreli baglanir (`/styles.css`, `/site.js`, `/favicon.svg`).
+- `text-transform:uppercase` metni sayfanin diline gore buyutur: `lang="tr"` altinda i -> İ olur ("ENGLİSH", "SARDİS").
+  Buyuk harfle gosterilen Ingilizce adlara (dil menusundeki English, `.sardis-mark`, `.ed-item` marka linkleri) `lang="en"` ver.
 
 ## Pages
 - `index.html` — Home (hero, brands, "for retailers" section, contact section)
