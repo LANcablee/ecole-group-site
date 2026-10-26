@@ -306,7 +306,7 @@
   .prose p:last-child{margin-bottom:0}
   .about-foot{margin-top:clamp(2.5rem,5vw,3.5rem);padding-top:1.8rem;border-top:1px solid var(--line)}
 
-  /* ---- brand page (ELY'S CURE) ---- */
+  /* ---- brand page (Ely's Cure) ---- */
   .brand-name{font-family:var(--serif);font-weight:500;color:var(--green);
     font-size:clamp(3rem,8vw,6rem);line-height:1;letter-spacing:.01em;margin:1.6rem 0 1.4rem}
   .brand-lede{font-family:var(--serif);font-weight:400;color:var(--ink);

@@ -2,7 +2,9 @@
 
 Static multi-page site for **Ecole Group Ltd**, an independent UK group.
 
-**Marka mimarisi:** **SARDIS HOME** = grubun KENDI markasi (pamuklu ev/banyo tekstili; Turkiye'de uretilir) — eski "Ecole Textile" bolumunun yerine gecti. **ELY’S CURE** = distributorlugunu yaptigimiz marka. **Ecole Chemicals** = gelistirme asamasindaki tek bolum.
+**Marka mimarisi:** **SARDIS HOME** = grubun KENDI markasi (pamuklu ev/banyo tekstili; Turkiye'de uretilir) — eski "Ecole Textile" bolumunun yerine gecti. **Ely’s Cure** = distributorlugunu yaptigimiz marka. **Ecole Chemicals** = gelistirme asamasindaki tek bolum.
+Marka adlari kaynakta bas harfleri buyuk yazilir: `Sardis Home`, `Ely’s Cure`, `Ecole Chemicals`. Tamami buyuk gorunmesi gereken
+yerde (wordmark, eyebrow, `.ed-item` linkleri) bunu yalnizca CSS `text-transform:uppercase` yapar; HTML'e BUYUK HARFLE YAZILMAZ.
 Site kendini distributor DEGIL, hem kendi markalarini kuran hem secili markalari temsil eden bir grup olarak konumlar; toptanci dili (marj, minimum siparis, stok yenileme, ticari kosullar) KULLANILMAZ.
 
 ## i18n
@@ -17,7 +19,7 @@ Site kendini distributor DEGIL, hem kendi markalarini kuran hem secili markalari
 ## Pages
 - `index.html` — Home (hero, brands, "for retailers" section, contact section)
 - `about.html` — About
-- `elys-cure.html` — ELY’S CURE brand page
+- `elys-cure.html` — Ely’s Cure brand page
 - `sardis-home.html` — SARDIS HOME marka sayfasi (`.theme-sardis` alt temasi)
 - `chemicals.html` — "in development" sayfasi
 - `textile.html` KALDIRILDI — `_redirects` ile `/textile` → `/sardis-home` (301)
